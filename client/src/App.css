@@ -1,0 +1,99 @@
+/* Additional styles for App component */
+.container {
+  min-height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.header h1 {
+  color: #1a202c;
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+.form-container {
+  background: white;
+  border: 1px solid #e2e8f0;
+}
+
+.result-container {
+  background: white;
+  border: 1px solid #e2e8f0;
+}
+
+.input-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.textarea {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.textarea::placeholder {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  background: #3182ce;
+}
+
+.button:hover {
+  background: #2c5aa0;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3);
+}
+
+.result-content {
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  color: #2d3748;
+}
+
+.copy-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .header p {
+    font-size: 1rem;
+  }
+  
+  .form-container,
+  .result-container {
+    padding: 20px;
+  }
+  
+  .textarea {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .form-container,
+  .result-container {
+    padding: 15px;
+  }
+} 
