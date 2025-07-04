@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Sparkles, FileText, Briefcase, Copy, Check } from 'lucide-react';
+import { API_ENDPOINTS } from './config';
 import './App.css';
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
     setSuccess('');
 
     try {
-      const response = await axios.post('/api/optimize-resume', {
+      const response = await axios.post(API_ENDPOINTS.optimizeResume, {
         jobDescription,
         resume,
         model: selectedModel
