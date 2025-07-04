@@ -1,5 +1,7 @@
 # ResumeGPT - AI-Powered Resume Optimizer
 
+https://lcy4869.github.io/resumeGPT
+
 A modern web application that uses ChatGPT to optimize resumes based on specific job descriptions. The app features a clean, responsive interface with three main text areas: job description input, current resume input, and AI-generated optimized resume output.
 
 ## Features
